@@ -22,4 +22,28 @@ entries:
     urls:
     - https://github.com/michaelkoetter/charts/releases/download/mosquitto-0.4.0/mosquitto-0.4.0.tgz
     version: 0.4.0
+  zigbee2mqtt:
+  - apiVersion: v2
+    appVersion: 1.15.0
+    created: "2020-10-25T14:40:52.085051701Z"
+    description: Bridges events and allows you to control your Zigbee devices via
+      MQTT
+    digest: 46b180ae3d72a1f90a5ef5abfa537e9de0f69f5d2583845bfe83c1077af555b8
+    home: https://www.zigbee2mqtt.io
+    icon: https://www.zigbee2mqtt.io/images/logo.png
+    keywords:
+    - zigbee
+    - mqtt
+    maintainers:
+    - email: helm@movishell.pl
+      name: ishioni
+    - email: miguelangel.santiago@hotmail.com
+      name: masantiago
+    name: zigbee2mqtt
+    sources:
+    - https://github.com/Koenkk/zigbee2mqtt
+    type: application
+    urls:
+    - https://github.com/michaelkoetter/charts/releases/download/zigbee2mqtt-2.1.0/zigbee2mqtt-2.1.0.tgz
+    version: 2.1.0
 generated: "2020-10-25T10:36:27.503252269Z"
