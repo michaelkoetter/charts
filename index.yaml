@@ -1259,6 +1259,24 @@ entries:
     version: 1.0.0
   esphome:
   - apiVersion: v2
+    appVersion: 1.15.3
+    created: "2020-10-28T12:32:39.508725727Z"
+    description: ESPHome
+    digest: 4393e526ce6815475e004df603f5e3b4272b1ada79552f46534419f979774d09
+    home: https://github.com/k8s-at-home/charts/tree/master/charts/esphome
+    icon: https://esphome.io/_images/logo-text.svg
+    keywords:
+    - esphome
+    maintainers:
+    - email: jeff@billimek.com
+      name: billimek
+    name: esphome
+    sources:
+    - https://github.com/esphome/esphome
+    urls:
+    - https://github.com/k8s-at-home/charts/releases/download/esphome-2.3.0/esphome-2.3.0.tgz
+    version: 2.3.0
+  - apiVersion: v2
     appVersion: 1.15.2
     created: "2020-09-28T20:09:04.710655921Z"
     description: ESPHome
@@ -1675,6 +1693,48 @@ entries:
     - https://github.com/billimek/billimek-charts/releases/download/heimdall-1.0.1/heimdall-1.0.1.tgz
     version: 1.0.1
   home-assistant:
+  - apiVersion: v2
+    appVersion: 0.116.1
+    created: "2020-10-28T12:41:08.930819853Z"
+    dependencies:
+    - condition: esphome.enabled
+      name: esphome
+      repository: https://k8s-at-home.com/charts/
+      version: ~2.2.0
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 9.1.2
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://charts.bitnami.com/bitnami
+      version: 7.7.1
+    - condition: influxdb.enabled
+      name: influxdb
+      repository: https://charts.bitnami.com/bitnami
+      version: 0.6.7
+    description: Home Assistant
+    digest: 0d0ead811d02e1ab67e4eed6715dbd97f14bae1ab67dd67ac316375e81392769
+    home: https://github.com/k8s-at-home/charts/tree/master/charts/home-assistant
+    icon: https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Home_Assistant_Logo.svg/519px-Home_Assistant_Logo.svg.png
+    keywords:
+    - home-assistant
+    - hass
+    - homeassistant
+    maintainers:
+    - email: jeff@billimek.com
+      name: billimek
+    - email: phil@hellmi.de
+      name: runningman84
+    name: home-assistant
+    sources:
+    - https://github.com/home-assistant/home-assistant
+    - https://github.com/danielperna84/hass-configurator
+    - https://github.com/cdr/code-server
+    - https://github.com/k8s-at-home/charts/tree/master/charts/home-assistant
+    urls:
+    - https://github.com/k8s-at-home/charts/releases/download/home-assistant-2.6.0/home-assistant-2.6.0.tgz
+    version: 2.6.0
   - apiVersion: v2
     appVersion: 0.116.1
     created: "2020-10-13T20:05:38.633540239Z"
